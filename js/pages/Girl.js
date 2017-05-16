@@ -60,7 +60,4 @@ const styles = StyleSheet.create({
   tips:{
     fontSize:22
   }
-
-
-
 });

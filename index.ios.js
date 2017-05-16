@@ -8,5 +8,5 @@
  import {
    AppRegistry,
  } from 'react-native';
- import setup from './js/pages/setup.js';
+ import setup from './js/pages/setup';
  AppRegistry.registerComponent('myapp', () => setup);

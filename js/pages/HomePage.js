@@ -18,6 +18,7 @@ import Boy from './Boy';
 import ListViewTest from './ListViewTest';
 import PopularPage from './PopularPage';
 import AsyncStorageTest from './AsyncStorageTest';
+import MyPage from './my/MyPage';
 
 
 export default class myapp extends Component {
@@ -94,7 +95,7 @@ export default class myapp extends Component {
                      onPress={() => this.setState({ selectedTab: 'mine' })}>
                      <Navigator
                           initialRoute={{
-                             component:AsyncStorageTest
+                             component:MyPage
                           }}
                           renderScene={(route,navigator)=>{
                           let Component =route.component;

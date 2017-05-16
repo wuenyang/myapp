@@ -9,8 +9,8 @@ StyleSheet
 } from 'react-native';
 
 import HomePage from './HomePage'
-//import TabBarExample from './TabBarExample'
-import NavigationBar from '../common/NavigationBar';
+
+
 export default class WelcomePage extends Component{
 
   componentDidMount(){
@@ -28,14 +28,9 @@ export default class WelcomePage extends Component{
   render(){
     return <View >
 
-        <Image style={styles.setup} source={require('../../res/images/setup/setup.jpg')} resizeMode={Image.resizeMode.cover}>
-        <NavigationBar
-          title={'Boy'}
-          statusBar={{
-            barStyle:'dark-content',
-            hidden:false
-          }}
-        />
+        <Image style={styles.setup}
+          source={require('../../res/images/setup/setup.jpg')}
+          resizeMode={Image.resizeMode.cover}>
         </Image>
     </View>
   }

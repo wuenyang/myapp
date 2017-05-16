@@ -1,6 +1,6 @@
-### 说明
+# 说明
 ## github 的使用。
-# 如何将本地一个项目提交到github 上？
+### 如何将本地一个项目提交到github 上？
 > 1. 拥有github账号，并构建一个project?
 > 2. 到project 根目录下 执行命令 git init ，就会生成一个.git
 > 3. 后配置 ssh ,输入命令：
@@ -13,7 +13,7 @@
  > 6. 当你successfully之后，咱们就在 git config 里设置一下你的 github 登录名以及登陆邮箱，执行以下两个命：
     git config --global user.name "your name"
     git config --global user.email "your_email@youremail.com"
-#下面操作是上传代码
+###下面操作是上传代码
  > 1. 将你的项目代码拉到这个文件夹，执行命令，git status
  > 2. 这个时候你就会看到所有的改动，然后执行 git add .    (有个点哦，这个点表示更改所有的改动)
    然后执行命令 git commit -m "输入你提交的备注"
