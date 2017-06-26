@@ -21,6 +21,40 @@ export default class PopularPage extends Component{
 
 
        render(){
+
+             var statusBar ={
+               backgroundColor:'#6495ED',
+               barStyle:'light-content'
+             }
+
+             let navigationBar = <NavigationBar title={'最热'} 　
+               statusBar={statusBar}
+               rightButton={this.renderRightButton()}
+             />;
+
+             let content = this.state.languages.length> 0 ?
+              <ScrollableTabView
+                tabBarUnderlineStyle={{backgroundColor:'#e7e7e7',height:2}}
+                tabBarInactiveTextColor='mintcream'
+                tabBarInactiveTextColor='white'
+                ref="ScrollableTabView"
+                tabBarBackgroundColor={this.state.theme.themeColor}
+                initialPage={0}
+                renderTabBar={()=><ScrollableTabBar style={{height:40,borderWidth:0,elevation:2}} tabStyle={{height:39}}/>}
+                ></ScrollableTabView> :null;
+
+                return <View style={styles.container}>
+                      {navigationBar}
+                      {content}
+                      {this.renderMoreView()}
+                      {this.renderCustomThemeView()}
+                </View>
+
+
+
+
+
+
              return(
                <View style={styles.container}>
                       <NavigationBar
